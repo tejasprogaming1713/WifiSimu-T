@@ -25,6 +25,10 @@ Helper: **ayolookhelper**
 4️⃣ Run auto-installer:
     `./run`
 
+    # OR BY
+
+    `.run.sh`
+
 ========================================
 ▶️ HOW TO RUN W I S I U
 ========================================
