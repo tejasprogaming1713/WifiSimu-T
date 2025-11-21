@@ -15,7 +15,7 @@ RESET='\e[0m'
 clear
 
 # -------------------------
-# WISIU PREMIUM INTRO (Style E + C)
+# PREMIUM WISIU INTRO (STYLE E + C)
 # -------------------------
 echo -e "${YELLOW}✦━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━✦${RESET}"
 echo -e "${PURPLE}██╗    ██╗██╗███████╗██╗"
@@ -28,7 +28,8 @@ echo -e "${CYAN}           W I S I U  ⚡${RESET}"
 echo -e "${GREEN}    WiFi Simulation Utility Pro v1.0${RESET}"
 echo -e "${YELLOW}✦━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━✦${RESET}"
 echo ""
-
+echo -e "${CYAN}To run auto-install next time use: ${GREEN}run wifi.sh${RESET}"
+echo ""
 
 # -------------------------
 # SPINNER ANIMATION
@@ -55,7 +56,6 @@ premium_slow() {
     echo ""
 }
 
-
 # -------------------------
 # RANDOM GENERATORS
 # -------------------------
@@ -71,7 +71,7 @@ rand_ip6() {
 
 rand_key() {
     letters=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
-    random_letter=${letters[$RANDOM % ${#letters[@]}]}
+    random_letter=${letters[$RANDOM % ${#letters[@]]}
     len=$((15 + RANDOM % 15))
     num=""
     for ((i=0;i<len;i++)); do num+=$((RANDOM%10)); done
@@ -86,7 +86,6 @@ random_error() {
         sleep 2
     fi
 }
-
 
 # -------------------------
 # MAIN WIFI MENU
@@ -109,9 +108,8 @@ echo ""
 premium_slow "Starting setup..."
 random_error & spinner
 
-
 # -------------------------
-# SIMULATED DATA OUTPUT
+# SIMULATED DATA
 # -------------------------
 IPV4=$(rand_ip4)
 IPV6=$(rand_ip6)
