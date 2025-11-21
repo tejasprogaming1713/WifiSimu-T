@@ -30,7 +30,7 @@ echo "=============================================="
 echo "  Auto-Setup Complete!"
 echo "  To run WISIU next time, simply type:"
 echo ""
-echo "      run wifi.sh"
+echo "      bash wifi.sh"
 echo "=============================================="
 echo ""
 
